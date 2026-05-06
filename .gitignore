@@ -1,0 +1,14 @@
+# Ignore uploaded files
+backend/uploads/
+backend/uploads/
+# Ignore Excel & CSV files (optional but recommended)
+*.xlsx
+*.csv
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.env

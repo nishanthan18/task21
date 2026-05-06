@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📊 Data Dashboard</h1>
+
+    <!-- Upload Section -->
+    <div class="upload-box">
+        <input type="file" id="fileInput">
+        <button onclick="uploadFile()">Upload File</button>
+    </div>
+
+    <!-- Search -->
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="🔍 Search anything...">
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+
+        <div class="filter-item">
+            <label>Filter Column</label>
+            <select id="columnSelect"></select>
+        </div>
+
+        <div class="filter-item">
+            <label>Value</label>
+            <input type="text" id="filterInput" placeholder="Enter value">
+        </div>
+
+        <div class="filter-item">
+            <label>Show Only</label>
+            <select id="displayColumn">
+                <option value="">All Columns</option>
+            </select>
+        </div>
+
+        <button class="apply-btn" onclick="applyFilter()">Apply Filter</button>
+
+    </div>
+
+    <!-- Table -->
+    <div class="table-container">
+        <table id="dataTable"></table>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
